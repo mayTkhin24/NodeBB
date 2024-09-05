@@ -20,6 +20,7 @@ modsController.flags = {};
 
 // The following function has been broken down with helper functions to reduce cognitive complexity
 modsController.flags.list = async function (req, res) {
+	console.log('mods.js has been loaded and is executing. The listing function for the flags is functional with refactored code.');
 	const [isAdminOrGlobalMod, moderatedCids,, { sorts }] = await initialize(req);
 	let [,, { filters }] = await initialize(req);
 
